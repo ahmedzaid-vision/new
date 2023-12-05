@@ -8,7 +8,7 @@ import Footer from './components/footer'
 
 function page() {
   return (
-    <div className='h-[400vh]'>
+    <div className=''>
        <Hero />
        <Services />
        <Projects />

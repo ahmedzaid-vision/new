@@ -8,9 +8,11 @@ import logo from "../../public/logo.png";
 import Link from "next/link";
 import Image from "next/image";
 import SearchBar from "./searchbar";
+import Menu from "./Menu";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hoverActive, setHoverActive] = useState(false);
   const headerRef = useRef(null);
 
   const toggleMenu = () => {
@@ -30,12 +32,17 @@ const Header = () => {
     };
   }, []);
 
+  const TestHover = () => {
+    setHoverActive(true);
+    console.log("Test hover");
+  };
+
   return (
     <header
       className="relative px-8 border-b py-3 bg-[#ebebeb6b] "
       ref={headerRef}
     >
-      {/* <SearchBa           r /> */}
+      {/* <SearchBar /> */}
       <div className="container mx-auto flex justify-between items-center">
         <Link href={"/"} className="">
           <Image
@@ -47,17 +54,23 @@ const Header = () => {
         </Link>
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center gap-10 text-white mb-5 ">
-          <Link href="/"  className="text-[20px]">
+          <Link href="/" className="text-[20px]">
             Home
           </Link>
           <Link href="/" className="text-[20px]">
             About
           </Link>
-          <Link href="/" className="flex items-center gap-1 text-[20px]">
+          <Link
+            href="/"
+            className="flex items-center gap-1 text-[20px] relative"
+            onMouseEnter={() => setHoverActive(true)}
+            onMouseLeave={() => setHoverActive(false)}
+          >
             <div> Projects</div>
             <div className="text-[16px]">
               <VscTriangleDown />
             </div>
+            <Menu onHover={hoverActive} />
           </Link>
           <Link href="/" className="text-[20px]">
             Contact Us
