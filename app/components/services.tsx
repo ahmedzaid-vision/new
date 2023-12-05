@@ -52,14 +52,14 @@ const Services = () => {
       }}
     >
       <div className="container mx-auto w-[90%] ">
-        <h2 className="text-md smtext-xl  md:text-3xl font-semibold mb-4 pb-2 text-[#005826] text-center ">
+        <h2 className="text-xl md:text-3xl font-semibold mb-4 pb-2 text-[#005826] text-center ">
           Why Square Contracting?
         </h2>
         <div className="w-[20%] h-[2px] bg-[#005826] mx-auto "></div>
         <div className="flex justify-between flex-wrap gap-10 mt-10">
           {servicesData.map((service, index) => ( 
             <div
-              className="flex  gap-5 items-start w-full lg:w-[48%]"
+              className="flex  gap-5 items-start w-full lg:w-[47%]"
               key={index}
             >
               <div className="w-[250px]">
@@ -72,7 +72,7 @@ const Services = () => {
                 />
               </div>
               <div key={index} className=" rounded-lg">
-                <h3 className="text-xl font-semibold mb-2 text-[#005826]">
+                <h3 className=" text-md  md:text-xl font-semibold mb-2 text-[#005826]">
                   {service.title}
                 </h3>
                 <p>{service.description}</p>

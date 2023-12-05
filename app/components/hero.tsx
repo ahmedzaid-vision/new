@@ -28,7 +28,8 @@ function Hero() {
   ];
 
   return (
-    <div className="">
+    <div className="" id="home">
+      
       <Banner />
       <div
         className="h-[70vh]"

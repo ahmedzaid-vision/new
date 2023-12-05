@@ -47,7 +47,7 @@ const Header = () => {
         </Link>
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center gap-10 text-white mb-5 ">
-          <Link href="/" className="text-[20px]">
+          <Link href="/"  className="text-[20px]">
             Home
           </Link>
           <Link href="/" className="text-[20px]">
@@ -68,7 +68,7 @@ const Header = () => {
         </nav>
 
         {/* toggleMenu  */}
-        <div className="text-2xl block md:hidden cursor-pointer">
+        <div className="text-2xl block md:hidden cursor-pointer   ">
           <div
             className={`${menuOpen ? "hidden" : "block text-white"} mb-6`}
             onClick={() => setMenuOpen(!menuOpen)}
@@ -76,7 +76,7 @@ const Header = () => {
             <MdOutlineMenu />
           </div>
           <div
-            className={`${menuOpen ? "block" : "hidden"} z-40 relative mb-6`}
+            className={`${menuOpen ? "block" : "hidden"} relative z-40 mb-6`}
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <MdOutlineClose />
@@ -86,13 +86,29 @@ const Header = () => {
         <div
           className={`${
             menuOpen ? " scale-x-100" : " scale-x-0"
-          } absolute right-0 top-0 bg-white w-[300px] duration-300 h-[100vh] shadow-lg transition-transform transform origin-top-right`}
+          } absolute right-0 top-0 bg-white w-[300px] duration-300 h-[100vh] shadow-lg transition-transform transform origin-top-right z-30`}
         >
           <div className="mt-28 p-4 flex flex-col">
-            <Link href="/">home</Link>
-            <Link href="/">home</Link>
-            <Link href="/">home</Link>
-            <Link href="/">home</Link>
+            <div className="border-b pb-1">
+              <Link href="#home" className="text-[20px] py-3">
+                Home
+              </Link>
+            </div>
+            <div className="border-b pb-1">
+              <Link href="#about" className="text-[20px] py-3 ">
+                About
+              </Link>
+            </div>
+            <div className="border-b pb-1">
+              <Link href="#projects" className="text-[20px] py-3">
+                Projects
+              </Link>
+            </div>
+            <div className="border-b pb-1">
+              <Link href="#contact" className="text-[20px] py-3">
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
       </div>
