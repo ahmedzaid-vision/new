@@ -18,7 +18,7 @@ const Banner = () => {
     }}
     
     >
-      <div className="container mx-auto py-3 hidden md:flex justify-between items-center ">
+      <div className="container mx-auto py-3 hidden md:flex justify-between items-center font-sans ">
         <div className="flex gap-7">
           <span className="flex items-center gap-2 font-semibold">
             <FaPhone /> (+2) 0123 456 789

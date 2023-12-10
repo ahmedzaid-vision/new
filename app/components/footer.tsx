@@ -19,13 +19,13 @@ const Footer = () => {
         {/* Column 1: Logo and Text */}
         <div className="mb-6 md:mb-0 text-center md:text-left">
           <Image src="/logo.png" alt="Your Logo" width={100} height={100} />
-          <p className="mt-2 text-left md:text-center">Your Company Tagline</p>
+          <p className="mt-2 text-left md:text-center">Square Contracting</p>
         </div>
 
         {/* Column 2: Navigation Links */}
         <div className="mb-7 md:mb-0 ">
-          <div className="text-2xl mb-3  text-white  ">Site Map </div>
-          <ul className="flex flex-col gap-3">
+          <div className="text-xl mb-3  text-white  ">Site Map </div>
+          <ul className="flex flex-col gap-3 font-sans">
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -43,16 +43,16 @@ const Footer = () => {
 
         {/* Column 3: Contact Info */}
         <div>
-          <div className="text-[25px] mb-3">Contact</div>
-          <p className="mb-2 flex items-center">
+          <div className="text-xl mb-3">Contact</div>
+          <p className="mb-2 flex items-center font-sans">
             <FiMail className="mr-2" />
             Email: info@example.com
           </p>
-          <p className="mb-2 flex items-center">
+          <p className="mb-2 flex items-center font-sans">
             <FiPhone className="mr-2" />
             Phone: +123 456 7890
           </p>
-          <p className="flex items-center">
+          <p className="flex items-center font-sans">
             <FiMapPin className="mr-2" />
             Location: Your Company Location
           </p>
@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright Notice */}
-      <div className="mt-12 text-center">
+      <div className="mt-12 text-center font-sans ">
         <p className="">&copy; 2023 Your Company. All rights reserved.</p>
       </div>
     </footer>
