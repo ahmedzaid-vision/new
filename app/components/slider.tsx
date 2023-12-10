@@ -43,7 +43,7 @@ export default function Slider({ projects }: any) {
         modules={[Pagination]}
         className="mySwiper"
       >
-        {projects.map((project, index) => (
+        {projects.map((project:any) => (
           <>
             <SwiperSlide className="">
               <Image
