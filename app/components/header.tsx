@@ -23,7 +23,7 @@ const Header = () => {
 
   // handleClickOutside
   const handleClickOutside = (event: any) => {
-    if (headerRef.current && !headerRef.current.contains(event.target)) {
+    if (headerRef.current){
       setMenuOpen(false);
     }
   };
