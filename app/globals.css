@@ -4,10 +4,10 @@
 
 @font-face {
   font-family: "Arkitech"; /* Give your font a name */
-  src: url("/fonts/Arkitech\ Bold.ttf") format("woff2"),
-    url("/fonts/Arkitech\ Light.ttf") format("woff"),
-    url("/fonts/Arkitech\ Medium.ttf") format("woff"),
-    url("/fonts/Arkitech\ Round\ Light.ttf") format("woff");
+  src: url("/fonts/Arkitech\ Bold.ttf") format("ttf"),
+    url("/fonts/Arkitech\ Light.ttf") format("ttf"),
+    url("/fonts/Arkitech\ Medium.ttf") format("ttf"),
+    url("/fonts/Arkitech\ Round\ Light.ttf") format("tff");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,4 +15,5 @@
 body {
   font-family: "Arkitech", sans-serif;
   font-weight: normal;
-}
+}            
+                      
